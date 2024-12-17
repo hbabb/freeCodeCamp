@@ -9,3 +9,47 @@ let inventory = ["stick"];
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
+
+const text = document.querySelector("#text");
+const xpText = document.querySelector("#xpText");
+const healthText = document.querySelector("#healthText");
+const goldText = document.querySelector("#goldText");
+const monsterName = document.querySelector("#monsterName");
+const monsterStats = document.querySelector("#monsterStats");
+const monsterHealthText = document.querySelector("#monsterHealth");
+
+const locations = [];
+
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
+function goStore() {
+    button1.innerText = "Buy 10 health (10 gold)";
+    button1.onclick = buyHealth;
+    button2.innerText = "Buy weapon (30 gold)";
+    button2.onclick = buyWeapon;
+    button3.innerText = "Go to town square";
+    button3.onclick = goTown;
+    text.innerText = "You enter the store.";
+};
+
+function goCave() {
+    console.log("Go to cave");
+};
+
+function fightDragon() {
+    console.log("Fight dragon");
+};
+
+function buyHealth() {
+    console.log("Buy health");
+};
+
+function buyWeapon() {
+    console.log("Buy weapon");
+};
+
+function goTown() {
+    console.log("Go to town square");
+};
